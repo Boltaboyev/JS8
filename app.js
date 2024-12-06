@@ -1,5 +1,3 @@
-
-
 // Filter -------------------------------------------------------------------------------
 
 // let arr = ['apple', 'apple', 'banana', 'mango']
@@ -30,7 +28,7 @@
 //     return false;
 // };
 
-// let result = arr.customSome('mango');
+// let result = arr.customSome('banna');
 // console.log(result);
 
 // Every -----------------------------------------------------------------------------------
@@ -48,8 +46,17 @@
 // let result = arr.customSome('apple');
 // console.log(result);
 
-
-
 // Map ---------------------------------------------------------------------------------
-// let arr = ['apple', 'apple', 'banana', 'mango']
-// Array.prototype.customMap = (cb) => 
+// let arr = [1, 2, 3, 4, 5, 6]
+
+// Array.prototype.customMap = function(callback) {
+//     let newArr = []
+//     for (let i = 0; i < this.length; i++) {
+//         newArr.push(callback(this[i], i , this));
+//     }
+//     return newArr;
+// }
+
+// let newArr = arr.customMap((value) => value * value)
+
+// console.log(newArr);
